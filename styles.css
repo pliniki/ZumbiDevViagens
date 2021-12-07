@@ -372,6 +372,45 @@ nav.show div.icon-cross {
   margin-right: 0.625rem;
 }
 
+
+.campo{
+    margin-bottom: 1em;
+}
+.campo label{
+    margin-bottom: 0.2rem;
+    color: #666666;
+    display: block;
+}
+
+
+.campo input[type="text"], .campo input[type="email"]{
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 16px;
+
+position: static;
+width: 506px;
+height: 56px;
+left: 0px;
+top: 26px;
+
+
+background: #FFFFFF;
+border: 1px solid #CCCCCC;
+border-radius: 8px;
+
+
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+margin: 8px 0px;
+
+
+}
+
+
 /*====  FOOTER ============================ */
 footer {
   background: var(--base-color);
@@ -556,7 +595,7 @@ footer .social a:hover {
     align-items: center;
     justify-content: space-between;
   }
-}
+
 /* large devices: 1023 > */
 /* large devices: 992 > */
 @media (min-width: 992px) {
