@@ -1,0 +1,28 @@
+.form-control {
+  -webkit-font-smoothing: antialiased;
+  background-color: transparent;
+  border: 0;
+  border-radius: 0;
+  box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.12);
+  font-size: 16px;
+  height: 48px;
+  line-height: 48px;
+  padding-left: 0;
+  padding-right: 0;
+  transition: all 0.15s ease;
+  margin-left: 7rem;
+}
+.form-control {
+  display: block;
+  width: 30rem;
+  padding: 0.375rem 0.75rem;
+  padding-right: 0.75rem;
+  padding-left: 0.75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #55595c;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #ccc;
+  border-radius: 0.25rem;
+}
