@@ -26,7 +26,7 @@ a {
   --title-color: hsl(var(--hue) 41% 10%);
   --text-color: hsl(0 0% 46%);
   --text-color-light: hsl(0 0% 98%);
-  --body-color: hsl(0 0% 98%);
+  --body-color: white;
 
   /* fonts */
   --title-font-size: 1.875rem;
@@ -305,13 +305,16 @@ nav.show div.icon-cross {
   position: relative;
 }
 
-#about .image img {
+#about .image > img {
   position: relative;
 }
 
 #about .image img,
 #about .image::before {
   border-radius: 0.25rem;
+  margin: auto;
+  width: 50%;
+  display: flex;
 }
 
 #about .text {
@@ -570,37 +573,39 @@ footer .social a:hover {
     display: flex;
     align-items: center;
   }
-}
 
-#about .image {
+
+  #about .image {
   display: flex;
   align-items: center;
-}
+  }
 
-#about .image img {
+  #about .image img {
   width: 30rem;
   grid-area: left;
-}
+  }
 
-/* home */
-#home .container {
-  margin-left: auto;
-  margin-right: auto;
-}
+  /* home */
+  #home .container {
+    margin-left: auto;
+    margin-right: auto;
+  }
 
-/* contact */
-#contact .container {
-  grid-auto-flow: column;
-  align-items: center;
-}
+  /* contact */
+  #contact .container {
+    grid-auto-flow: column;
+    align-items: center;
+  }
 
-#contact .text {
-  max-width: 25rem;
-}
+  #contact .text {
+    max-width: 25rem;
+  }
 
-/* footer */
-footer.section {
-  padding: 3.75rem 0;
+  /* footer */
+  footer.section {
+    padding: 3.75rem 0;
+  }
+
 }
 
 /* large devices: 1023 > */
@@ -609,6 +614,7 @@ footer.section {
     --title-font-size: 2.25rem;
     --subtitle-font-size: 1.125rem;
   }
+ 
   /* about */
 
   #about .container {
@@ -620,28 +626,42 @@ footer.section {
     margin: auto;
   }
 }
+
 /* large devices: 992 > */
 @media (min-width: 992px) {
   :root {
     --title-font-size: 2.25rem;
     --subtitle-font-size: 1.125rem;
   }
+  
 }
+
 /* medium devices: 767 > */
 @media (min-width: 767px) {
+
   :root {
     --title-font-size: 2.25rem;
     --subtitle-font-size: 1.125rem;
   }
 
+
   /* about */
 
   #about .container {
-    margin: auto 5rem;
+    margin: 2rem 5rem;
   }
 
   #about .image img {
-    width: 30rem;
+    width: 60vmin;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+
+  }
+
+  #about > image > .trip-image {
+    width: 50vw;
     margin: auto;
   }
+  
 }

@@ -26,3 +26,9 @@
   border: 1px solid #ccc;
   border-radius: 0.25rem;
 }
+
+/* About */
+
+#about > image > .trip-image {
+  width: 50vw;
+}
