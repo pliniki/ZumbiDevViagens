@@ -39,6 +39,21 @@ var swiper = new Swiper('.mySwiper', {
   }
 })
 
+/* preço dos pacotes */ 
+
+function calcular() {
+  var num1 = Number(document.getElementById("num1").value);
+  var num2 = Number(document.getElementById("num2").value);
+  var elemResult = document.getElementById("resultado");
+
+  if (elemResult.textContent === undefined) {
+    document.getElementById("resultado").textContent = "Valor total: " + String(num1 * (200)) + ".";
+  }
+  else { // IE
+    document.getElementById("resultado").textContent = "Valor total: " + String(num1 * (200)) + ",00 Reais";
+  }
+}
+
 /* ScrollReveal: Mostrar elementos quando der scroll na página */
 const scrollReveal = ScrollReveal({
   origin: 'top',
