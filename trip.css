@@ -300,7 +300,7 @@ footer p.direito {
   /* Trips */
 
   #trips .container {
-    margin: auto 6rem;
+    margin: auto 9rem;
     display: flex;
   }
 
@@ -317,6 +317,13 @@ footer p.direito {
   :root {
     --title-font-size: 2.25rem;
     --subtitle-font-size: 1.125rem;
+  }
+
+  /* pagseguro button*/
+
+  .pagamento {
+    position: relative;
+    left: -6rem;
   }
 
   /* footer */
