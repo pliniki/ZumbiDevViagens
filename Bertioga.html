@@ -10,7 +10,7 @@
       <link rel="stylesheet" href="assets/fonts/styles.css" />
 
       <!--- Trips --->
-      <link rel="stylesheet" href="trip.css" importance="" />
+      <link rel="stylesheet" href="trip.css"/>
 
       <!--Favicon-->
       <link
@@ -41,11 +41,12 @@
 
           <!-- menu -->
           <div class="menu">
-            <ul class="grid">
-              <li><a class="title" href="index.html">Início</a></li>
-              <li><a class="title" href="index.html">Sobre</a></li>
-              <li><a class="title" href="index.html">Contato</a></li>
-              <li><a class="title" href="Bertioga.html">Pacotes</a></li>
+            <ul class="container grid">
+              <li><a class="title" href="index.html#home">Início</a></li>
+              <li><a class="title" href="index.html#about">Sobre</a></li>
+              <li><a class="title" href="index.html#pacotes">Pacotes</a></li>
+              <li><a class="title" href="index.html#contact">Contato</a></li>
+              
             </ul>
           </div>
           <!-- /menu -->
@@ -54,19 +55,19 @@
         </nav>
       </header>
 
+      <main>
       <!-- Trips -->
       <section class="section" id="trips">
         <div class="container grid">
           <div class="image">
-            <img src="assets/images/santos.png" alt="Praia de Ubatuba">
+            <img src="assets/images/bertiogasobre.jpg" alt="Praia de Ubatuba">
           </div>
           <div class="text">
             <h2 class="title">Bertioga</h2>
             <p>
-              Muito procurada pelos viajantes em busca de um lugar para descansar, Bertioga é sinônimo de muita natureza e história. A cidade abriga o Parque Estadual Restinga de Bertioga, preservando a fauna e a flora da região, com trilhas que levam a cachoeiras, rios, piscinas naturais.  
-Outro forte atrativo da cidade são suas praias, que esbanjam um belo cenário. 
-Como: Riviera de São Lourenço, Praia da Enseada, Praia do Indaiá, Praia do Itaguaré, Praia de Guaratuba e Praia do Boracéia. 
-
+              Muito procurada pelos viajantes em busca de um lugar para descansar, Bertioga é sinônimo de muita natureza e história. A cidade abriga o Parque Estadual Restinga de Bertioga, preservando a fauna e a flora da região, com trilhas que levam a cachoeiras, rios e piscinas naturais.  
+              Outro forte atrativo da cidade são suas praias, que esbanjam um belo cenário. 
+              Como: Riviera de São Lourenço, Praia da Enseada, Praia do Indaiá, Praia do Itaguaré, Praia de Guaratuba e Praia do Boracéia. 
 
             </p>
             <br />
@@ -78,26 +79,24 @@ Como: Riviera de São Lourenço, Praia da Enseada, Praia do Indaiá, Praia do It
     
 
       <!--Botoes de busca-->
-  <div class="origem">
+  <div class="origem container">
     <div class="citie">
       <label for="Origem" class="origem"> Saíde de: </label>
-      <select name="cidadecep" class="form-citie" id="cidadecep" data-val="5270">
+      <select name="cidadecep" class="form-citie container" id="cidadecep" data-val="5270">
         <option value="4706">Portuguesa - Tietê</option>
         <option value="4707">Palmeiras - Barra Funda</option>
       </select>
   </div>
   <div class="people">
-      <label for="acompanhantes" class="acompanhantes"> Pessoas: </label>
-      <input class="people2" type="text" id="num1" onblur="calcular();" />
-      <button class="price" type="text" id="num2"onblur="calcular();"> Enviar  
-</button>  
-    </select>
-    </div>  
+    <label for="acompanhantes" class="acompanhantes"> Pessoas: </label>
+    <input class="people2" type="text" id="num1" onkeyup="calcular();" /> 
+  </select>
   </div>
+</div>
 <!-- --------------------Total escolhido---------------------------->
-<div class="total">
-<span id="resultado"></span>
-<form target="pagseguro" method="post" action="https://pagseguro.uol.com.br/checkout/checkout.jhtml">
+ <div class="total container">
+ <span id="resultado"></span>
+ <form target="pagseguro" method="post" action="https://pagseguro.uol.com.br/checkout/checkout.jhtml">
   <input type="hidden" name="email_cobranca" value="suporte@lojamodelo.com.br" />
   <input type="hidden" name="tipo" value="CBR" />
   <input type="hidden" name="moeda" value="BRL" />
@@ -107,13 +106,13 @@ Como: Riviera de São Lourenço, Praia da Enseada, Praia do Indaiá, Praia do It
   <input type="hidden" name="item_valor" value="200,00" />
   <input type="hidden" name="frete" value="0" />
   <input type="hidden" name="peso" value="0" />
-  <input type="image" name="submit" class="pagamento" src="https://p.simg.uol.com.br/out/pagseguro/i/botoes/pagamentos/99x61-comprar-assina.gif" alt="Pague com PagSeguro - é rápido, grátis e seguro!" />
-</form>
-</div>
+  <input class="pagamento" type="image" name="submit" src="https://p.simg.uol.com.br/out/pagseguro/i/botoes/pagamentos/99x61-comprar-assina.gif" alt="Pague com PagSeguro - é rápido, grátis e seguro!" />
+ </form>
+ </div>
 
 <!------------------------Regulamento ------------------------->
-<h2 class="text"><strong>Regulamento</strong></h2>
-<div class="rules">
+<h2 class="text container"><strong>Regulamento</strong></h2>
+<div class="rules container">
 
       <br />
         <div class="cards">
@@ -121,7 +120,7 @@ Como: Riviera de São Lourenço, Praia da Enseada, Praia do Indaiá, Praia do It
           <br />
           <p>
             <strong>O que é incluído nesse pacote:</strong>
-          
+            <br />
             <br />
             Deslocamento da cidade de São Paulo à Ubatuba; 
 Hospedagem (2 noites e 1 dia); 
@@ -130,32 +129,29 @@ Motorista particular para grupos maiores de 4 pessoas.
 Todos os impostos, pedágios, taxas de manuseio, taxas de estacionamento durante paradas e receptivo em aeroportos. 
 
             <br />
-            
+            <br />
             <strong>O que não é incluí­do no nosso pacote:</strong>
             <br />
-          
-            Alimentos e bebidas.
+            <br />
+            Almoço e bebidas.
             <br />
             Gorjetas (opcional)
             <br />
-                        
+            <br />
             <strong>Detalhes da partida:</strong>
             <br />
-            
-            O embarque acontece às 07h00 na estação rodoviária do Tietê (São Paulo, Capital) com estimativa de chegada às 09h00 em Bertioga, com uma parada de 30 minutos. Do checkin e checkout em Bertioga, estimamos uma duração de 3 dias dentro deste pacote. 
+            <br />
+            O embarque acontece às 07h00 na estação rodoviária do Tietê (São Paulo, Capital) com estimativa de chegada às 09h00 em Bertioga,
+             com uma parada de 30 minutos. Do checkin e checkout em Bertioga,
+              estimamos uma duração de 3 dias dentro deste pacote. 
 
-            <br />
-            <strong>Itinerário (Bertioga)</strong>
-            <br />
-            1 praia por dia a escolha do cliente, totalizando 3 praias para que possa conhecer e desfrutar as praias com tranquilidade. 
-*Podendo ser negociado o adicional de mais uma praia, caso queira apenas conhecer e não passar o dia.
           </p>
           <br />
         </div>
         <div class="divider-3"></div>
         <div class="cards">
-          <h2>Formas de pagamento</h2>
-          <br />
+          <h2 class="cards2" >Formas de pagamento</h2>
+          <br/>
           <br />
           <p>
             Trabalhamos com cartões de crédito (em até 10x sem juros), débito,
@@ -163,38 +159,42 @@ Todos os impostos, pedágios, taxas de manuseio, taxas de estacionamento durante
           </p>
 </div>
 </div>
+<div class="divider-1"></div>
+</main>
 
 <!-- Footer -->
 <footer class="section">
   <div class="container grid">
-
     <div class="brand">
-    <img
-        class="logo-footer-1"
+      <img
+        class="logo-footer"
         src="assets/images/Zumbidev-removebg-preview.png"
         alt="logo zumbidevViagens dois coqueiros e um circulo. "
-      />
+      />  
 
-    <div class="social-1 grid" style="margin: 10px">
-      <a href="https://instagram.com" target="_blank">
+      <div class="copy">  
+        <p class="autor">©2021 ZumbiDev.Viagens</p>
+        <p class="direito">Todos os direitos reservados.</p>
+      </div>
+      <div class="social grid">
+        <a href="https://instagram.com" target="_blank">
           <img src="./assets/images/instagram.svg" />
-      </a>
-      <a href="https://facebook.com" target="_blank">
+        </a>
+        <a href="https://facebook.com" target="_blank">
           <img src="./assets/images/facebook.svg" />
-      </a>
-      <a href="https://www.whatsapp.com/" target="_blank"
+        </a>
+        <a href="https://www.whatsapp.com/" target="_blank"
           ><img src="./assets/images/whatsapp.svg" />
-      </a>
-      <a href="https://youtube.com" target="_blank"
+        </a>
+        <a href="https://youtube.com" target="_blank"
           ><img src="./assets/images/youtube.svg" />
-      </a>
-     </div>
+        </a>
+      </div>
       <!-- <a class="logo logo-alt" href="#home"
         >ZumbiDev Viagens</a
       >  Verificar se vai existir-->
 
-      <p class="autor">©2021 ZumbiDev.Viagens</p>
-      <p class="direito">Todos os direitos reservados.</p>
+      
     </div>
   </div>
 </footer>
@@ -202,4 +202,4 @@ Todos os impostos, pedágios, taxas de manuseio, taxas de estacionamento durante
 
 <script src="main.js"></script>
 </body>
-  </html>
+</html>

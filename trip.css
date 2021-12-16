@@ -157,6 +157,12 @@
   border: 1px solid #ccc;
   border-radius: 0.25rem;
 }
+/* pagseguro button*/
+
+.pagamento {
+  position: relative;
+  left: -6rem;
+}
 
 .buy {
   background-color: #1976d2;
@@ -181,6 +187,7 @@
   float: none;
   margin-left: 9.3rem;
   margin-top: 1.31rem;
+  margin-bottom: 3rem;
   width: 69.5rem;
   height: 32rem;
   padding: 0.375rem 0.75rem;
@@ -200,21 +207,40 @@
   border-right: 0.1rem solid #ccc;
 }
 
+.cards .cards2{
+  margin-left: 20px;
+}
+
+
 /*====  Trips ============================ */
 #trips {
   background: white;
+  display: grid;
+  margin-top: 2rem;
+  
 }
 
 #trips .container {
   margin: 0;
+  grid-auto-flow: column;
+    grid-area: right;
+    display: flex;
+    align-items: center;
 }
 
 #trips .image {
   position: relative;
+
+  
+}
+
+#trips .text h2{
+  color: #00bcd4;
 }
 
 #trips .image > img {
   position: relative;
+  
 }
 
 #trips .image img,
@@ -231,7 +257,7 @@
   padding: 0px;
 }
 
-/*====  FOOTER ============================ */
+/*====  FOOTER ============================ 
 footer {
   text-align: center;
   background: var(--base-color);
@@ -245,7 +271,7 @@ footer.section {
 .logo-footer-1 {
   margin: -5rem;
   width: 12rem;
-  position: absolute;
+
   left: 12rem;
   top: 106rem;
 }
@@ -293,14 +319,13 @@ footer p.autor {
 footer p.direito {
   position: absolute;
   bottom: -6rem;
-}
-
+}*/
 /* =========================================media query ================================*/
 @media (min-width: 1200px) {
   /* Trips */
 
   #trips .container {
-    margin: auto 9rem;
+    margin: auto 6rem;
     display: flex;
   }
 
@@ -319,14 +344,7 @@ footer p.direito {
     --subtitle-font-size: 1.125rem;
   }
 
-  /* pagseguro button*/
-
-  .pagamento {
-    position: relative;
-    left: -6rem;
-  }
-
-  /* footer */
+  /* footer 
   footer.section {
     padding: 3.75rem 0;
   }
@@ -335,7 +353,7 @@ footer p.direito {
     margin: -5rem;
     left: 11rem;
     width: 13rem;
-    position: absolute;
+    
     bottom: -2rem;
     top: 85rem;
   }
@@ -367,5 +385,6 @@ footer p.direito {
     position: absolute;
     right: 27rem;
     top: 87rem;
-  }
+  }*/
+  
 }

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+  <head>
+    <!-- PAGE INFO -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ZumbiDev Viagens</title>
+
+    <!-- Swiper -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+
+    <!--Favicon-->
+    <link
+      rel="shortcut icon"
+      href="assets/images/Zumbidev-removebg-preview.png"
+      type="image/x-icon"
+    />
+    <!-- STYLES -->
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="trip.css" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Poppins:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header id="header">
+      <nav class="container">
+        <a href="index.html">
+          <img
+            src="assets/images/Zumbidev-removebg-preview.png"
+            alt="Logo inovaDev Viagens, dois coqueiros e um circulo"
+          />
+        </a>
+
+        <!-- menu -->
+        <div class="menu">
+          <ul class="grid">
+            <li><a class="title" href="index.html">Início</a></li>
+            <li><a class="title" href="#about">Sobre</a></li>
+            <li><a class="title" href="#cidadecep">Contato</a></li>
+          </ul>
+        </div>
+        <!-- /menu -->
+        <div class="toggle icon-menu"></div>
+        <div class="toggle icon-cross"></div>
+      </nav>
+    </header>
+
+    <!-- ABOUT -->
+    <section class="section" id="about">
+      <div class="container grid">
+        <div class="image trip-image">
+          <img
+            src="assets/images/praia-brava-da-fortaleza 1.png"
+            alt="Logo inovaDev Viagens, dois coqueiros e um circulo"
+          />
+        </div>
+        <div class="text">
+          <h2 class="title">Sobre nós</h2>
+          <p>
+            A ZumbiDev Viagens surgiu de uma iniciativa coletiva de alunos de
+            turismo, que por frequentarem muito o litoral paulista, decidiram
+            transformar suas experiências e conhecimentos técnicos em pacotes
+            acessíveis que pudessem oferecer um turismo diferenciado, que
+            relaciona os prazeres do litoral sem deixar de fora as riquezas
+            culturais, históricas e artísticas presentes nessas localidades.
+          </p>
+          <br />
+          <p>
+            Por ser uma agência nova no mercado, contas apenas com 4 destinos
+            disponíveis: Prainha Branca, Santos, Ubatuba e Itamambuca. A ideia
+            de começar com apenas esses destinos é para proporcionar uma
+            experiência bem pensada, que ficará marcada na memória de nossos
+            clientes
+          </p>
+          <br />
+
+          <h3>Formas de Pagamento</h3>
+          <br />
+          <p>
+            Trabalhamos com cartões de crédito (em até 10x sem juros), débito,
+            TED e PIX, facilitando o seu pagamento.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <div class="divider-2"></div>
+
+    <!--Botoes de busca-->
+
+    <label for="acompanhantes"> Número de acompanhantes</label>
+
+    <select
+      name="cidadecep"
+      class="form-control col-sm-12 col-xs-12"
+      id="cidadecep"
+      data-val="5270"
+    >
+      <option value="4706">Portuguesa - Tiete</option>
+      <option value="4707">Palmeiras - Barra Funda</option>
+    </select>
+
+    <label for="acompanhantes"> Número de acompanhantes</label>
+
+    <select name="acompanhantes" id="acompanhantes" class="form-control">
+      <option value="" selected=""></option>
+      <option value="0">Somente eu</option>
+      <option value="1">Eu e mais 1 pessoa</option>
+      <option value="2">Eu e mais 2 pessoas</option>
+      <option value="3">Eu e mais 3 pessoas</option>
+      <option value="4">Eu e mais 4 pessoas</option>
+      <option value="5">Eu e mais 5 pessoas</option>
+      <option value="6">Eu e mais 6 pessoas</option>
+      <option value="7">Eu e mais 7 pessoas</option>
+      <option value="8">Eu e mais 8 pessoas</option>
+      <option value="9">Eu e mais 9 pessoas</option>
+      <option value="10">Eu e mais 10 pessoas</option>
+      <option value="11">Eu e mais 11 pessoas</option>
+      <option value="12">Eu e mais 12 pessoas</option>
+      <option value="13">Eu e mais 13 pessoas</option>
+      <option value="14">Eu e mais 14 pessoas</option>
+      <option value="15">Eu e mais 15 pessoas</option>
+    </select>
+
+    <label for="acompanhantes"> Número de acompanhantes</label>
+
+    <textarea
+      name="Descrição"
+      style="width: 505px; height: 102px; left: 0px; top: 26px"
+      placeholder="Digite aqui... "
+      id="Descrição"
+    ></textarea>
+  </body>
+</html>

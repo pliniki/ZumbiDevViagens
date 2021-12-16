@@ -32,27 +32,32 @@ function changeHeaderWhenScroll() {
 }
 
 /* Testimonials carousel slider swiper */
-var swiper = new Swiper('.mySwiper', {
+const swiper = new Swiper('.swiper', {
+  // Optional parameters
+  direction: 'horizontal',
+  loop: true,
+
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+  },
+
+  // Navigation arrows
   navigation: {
     nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev'
-  }
-})
+    prevEl: '.swiper-button-prev',
+  },
+
+  
+});
 
 /* preço dos pacotes */ 
 
 function calcular() {
   var num1 = Number(document.getElementById("num1").value);
-  var num2 = Number(document.getElementById("num2").value);
   var elemResult = document.getElementById("resultado");
-
-  if (elemResult.textContent === undefined) {
-    document.getElementById("resultado").textContent = "Valor total: " + String(num1 * (200)) + ".";
-  }
-  else { // IE
     document.getElementById("resultado").textContent = "Valor total: " + String(num1 * (200)) + ",00 Reais";
   }
-}
 
 /* ScrollReveal: Mostrar elementos quando der scroll na página */
 const scrollReveal = ScrollReveal({
@@ -64,8 +69,11 @@ const scrollReveal = ScrollReveal({
 
 scrollReveal.reveal(
   `#home .image, #home .text,
+  .swiper, .swiper-wrapper,
   #about .image, #about .text,
   #services header, #services .card,
+  #pacotes .pacotes-card, #pacotes .pacotes-card .card,
+  #contact .text, #contact .forms,
   #testimonials header, #testimonials .testimonials
   #contact .text, #contact .links,
   footer .brand, footer .social
@@ -115,3 +123,18 @@ window.addEventListener('scroll', function () {
   backToTop()
   activateMenuAtCurrentSection()
 })
+
+
+function phoneMaskBrazil() {
+  var key = window.event.key;
+  var element = window.event.target;
+  var isAllowed = /\d|Backspace|Tab/;
+  if(!isAllowed.test(key)) window.event.preventDefault();
+  
+  var inputValue = element.value;
+  inputValue = inputValue.replace(/\D/g,'');
+  inputValue = inputValue.replace(/(^\d{2})(\d)/,'($1) $2');
+  inputValue = inputValue.replace(/(\d{4,5})(\d{4}$)/,'$1-$2');
+  
+  element.value = inputValue;
+}

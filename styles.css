@@ -67,7 +67,7 @@ body {
 }
 
 .button:hover {
-  background: var(--base-color-alt);
+  background: blue;
 }
 
 .divider-1 {
@@ -244,23 +244,62 @@ nav.show div.icon-cross {
 }
 
 /*====  home ============================ */
-#home {
-  background: white;
-}
+  #home {
+    background: white;
+  }
 
-#home .container {
-  margin-left: 0;
-  margin-right: 0;
-}
+  #home .container {
+    margin-left: 0;
+    margin-right: 0;
+  }
 
-#home img {
-  width: 27.75rem;
-  height: 15rem;
-}
+  #home img {
+    width: 70rem;
+    height: 30rem;
 
+    object-fit: cover;
+    margin-right: 6.5rem;
+    position: relative;
+    right: -5rem;
+  }
+
+  #home .container {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  /*swiper*/
+  .swiper {
+    width: 90.125rem;
+    height: 35rem;
+    display: flex;
+    flex-direction: row;
+  }
+  .swiper-slide {
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
 /*====  ABOUT ============================ */
+
+.titlesobre{
+  color: #00bcd4;
+  
+ 
+}
+
 #about {
   background: white;
+  display: grid;
+  
 }
 
 #about .container {
@@ -273,6 +312,7 @@ nav.show div.icon-cross {
 
 #about .image > img {
   position: relative;
+  left: -85px;
 }
 
 #about .image img,
@@ -286,9 +326,96 @@ nav.show div.icon-cross {
 #about .text {
   margin-left: 1.5rem;
   margin-right: 1.5rem;
-  padding: 0px;
+  padding: 1rem;
+}
+/*pacotes cards*/
+
+h2, title .pacotes{
+  font: 700 var(--title-font-size) var(--title-font);
+  color: #00bcd4;
+
 }
 
+
+
+.pacotes{
+  background: white;
+  padding: 1rem;
+  
+}
+.pacotes h2{
+  text-align: center;
+}
+.pacotes-card{
+  max-width: 950px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.pacotes-card .card{
+  width: 250px;
+  height: 350px;
+  background-color: white;    
+  border-radius: 1.5rem 0;
+  margin: 2rem;
+  position: relative;
+}
+.pacotes-card .card img{
+  width: 100%;
+  border-radius: 1.5rem 0 0 0;
+}
+
+
+.pacotes-card .card h3{
+  text-align: center;
+  color: midnightblue;
+  padding: 8px;
+}
+.pacotes-card .card p{
+  font-weight: bold;
+  padding: 0 8px 8px 8px;
+}
+.pacotes-card .card ul li{
+  list-style: none;
+  padding: .4rem;
+  font-size: 12px;
+}
+
+.card:hover{
+  max-width: 100%;
+	-moz-transition: all 0.3s;
+	-webkit-transition: all 0.3s;
+	transition: all 0.3s;
+
+  -moz-transform: scale(1.1);
+	-webkit-transform: scale(1.1);
+	transform: scale(1.1);
+
+}
+.pacotes-card .card ul li svg{
+  width: 14px;
+  height: 14px;
+  margin: 0 .5rem 0 1rem;
+}
+.pacotes-card .card .destaque{
+  color: white;
+  position: absolute;
+  padding: .5rem;
+  font-size: 12px;
+  font-weight: normal;
+}
+.pacotes-card .card .promo{
+  top: 15px;
+  background-color: #f19839;
+  border-radius: 8px 0 0 8px;
+  right: 0%;
+}
+.pacotes-card .card .valor{
+  top: 120px;
+  background-color: #1d61dd;
+  border-radius: 0 8px 8px 0;
+}
 /*====  CONTACT ============================ */
 #contact .grid {
   gap: 4rem;
@@ -298,7 +425,7 @@ nav.show div.icon-cross {
   font-family: var(--title-font-size);
   font-weight: 700;
   font-size: 2rem;
-  color: #0f241d;
+  color:#00bcd4;;
 }
 
 #contact .button i,
@@ -312,34 +439,43 @@ nav.show div.icon-cross {
   margin-bottom: 1em;
 }
 .campo label {
+
   margin-bottom: 0.2rem;
   color: #666666;
   display: block;
+
 }
 
 .campo input[type='text'],
 .campo input[type='email'] {
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  padding: 16px;
+flex-direction: column;
+align-items: flex-start;
+padding: 16px;
 
-  position: static;
-  width: 506px;
-  height: 56px;
-  left: 0px;
-  top: 26px;
+position: static;
+width: 325px;
+height: 56px;
+left: 0px;
+top: 26px;
 
-  background: #ffffff;
-  border: 1px solid #cccccc;
-  border-radius: 8px;
+/* W Background */
 
-  flex: none;
-  order: 1;
-  align-self: stretch;
-  flex-grow: 0;
-  margin: 8px 0px;
+background: #FFFFFF;
+border: 1px solid #CCCCCC;
+border-radius: 8px;
+
+/* Inside Auto Layout */
+
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+margin: 8px 0px;
+
+
 }
+
 
 /*====  FOOTER ============================ */
 footer {
@@ -353,20 +489,22 @@ footer.section {
 }
 
 .logo-footer {
-  margin: -5rem;
+  width: 10vw
+ /* margin: -5rem;
 
   width: 10rem;
   position: absolute;
   left: 12rem;
-  top: 0rem;
+  top: 0rem;*/
 }
 
 footer .brand {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  
   align-items: center;
-  justify-content: space-around;
-  margin-bottom: 3rem;
+  justify-content: space-around; 
+  /* margin-bottom: 3rem;*/
 }
 
 footer .brand p {
@@ -384,7 +522,8 @@ footer .social {
   grid-auto-flow: column;
   width: fit-content;
   position: relative;
-  bottom: -3rem;
+  
+  margin: 15px;
 }
 
 footer .social a {
@@ -397,13 +536,13 @@ footer .social a:hover {
 }
 
 footer p.autor {
-  position: absolute;
+  
   bottom: 0rem;
   right: 27rem;
 }
 
 footer p.direito {
-  position: absolute;
+  
   bottom: -3rem;
   right: 26rem;
 }
@@ -493,6 +632,7 @@ footer p.direito {
   /* home */
   #home {
     background: white;
+    
   }
 
   #home .container {
@@ -513,33 +653,28 @@ footer p.direito {
     margin-right: auto;
   }
   /* swiper */
+
   .swiper {
-    margin-left: auto;
-    margin-right: auto;
-    position: relative;
-    overflow: hidden;
-    list-style: none;
-    padding: 0px;
-    z-index: 1;
-    margin-top: -5.5rem;
-    margin-bottom: -3rem;
+    width: 90.125rem;
+    height: 35rem;
+    display: flex;
+    flex-direction: row;
   }
-
   .swiper-slide {
-    height: auto;
-    padding: 4rem 1rem;
-    left: 7.8rem;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
   }
 
-  .swiper-pagination-bullet {
-    width: 0.75rem;
-    height: 0.75rem;
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
-
-  .swiper-pagination-bullet-active {
-    background: var(--base-color);
-  }
-
+ 
   /* about */
   #about .container {
     margin: 0 auto;
@@ -590,23 +725,24 @@ footer p.direito {
     padding: 3.75rem 0;
   }
 
-  .logo-footer {
+  /*.logo-footer {
     margin: -5rem;
     left: 5rem;
     width: 13rem;
     position: absolute;
     bottom: -2rem;
     top: 2rem;
-  }
+  }*/
 
-  footer .social {
+  /*footer .social {
+    
     position: relative;
     left: 28rem;
     bottom: -2rem;
-  }
+  }*/
 
   footer p {
-    position: absolute;
+    
     bottom: -2rem;
     bottom: -1rem;
     right: 26rem;
@@ -637,8 +773,49 @@ footer p.direito {
     --title-font-size: 2.25rem;
     --subtitle-font-size: 1.125rem;
   }
+
+
+  .campo {
+    margin-bottom: 1em;
+  }
+  .campo label {
+    margin-bottom: 0.2rem;
+    color: #666666;
+    display: block;
+  }
+  
+  .campo input[type='text'],
+  .campo input[type='email'] {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 16px;
+  
+    position: static;
+    width: 506px;
+    height: 56px;
+    left: 0px;
+    top: 26px;
+  
+    background: #ffffff;
+    border: 1px solid #cccccc;
+    border-radius: 8px;
+  
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+    margin: 8px 0px;
+  }
+
+
 }
+
+
 
 /* smarth devices: 415 > */
 @media (min-width: 320px) {
+
+  
+ 
 }
