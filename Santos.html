@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+  <html lang="pt_BR">
+    <head>
+      <!-- PAGE INFO -->
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>ZumbiDev Viagens</title>
+
+      <!-- Icones -->
+      <link rel="stylesheet" href="assets/fonts/styles.css" />
+
+      <!--- Trips --->
+      <link rel="stylesheet" href="trip.css"/>
+
+      <!--Favicon-->
+      <link
+        rel="shortcut icon"
+        href="assets/images/Zumbidev-removebg-preview.png"
+        type="image/x-icon"
+      />
+      <!-- STYLES -->
+      <link rel="stylesheet" href="styles.css" />
+      <link rel="stylesheet" href="/assets/fonts/style.css" />
+
+      <!-- Fonts -->
+      <link rel="preconnect" href="https://fonts.gstatic.com" />
+      <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Poppins:wght@400;500;700&display=swap"
+        rel="stylesheet"
+      />
+    </head>
+    <body>
+      <header id="header">
+        <nav class="container">
+          <a href="index.html">
+            <img
+              src="assets/images/Zumbidev-removebg-preview.png"
+              alt="Logo ZumbiDev Viagens, dois coqueiros e um circulo"
+            />
+          </a>
+
+          <!-- menu -->
+          <div class="menu">
+            <ul class="container grid">
+              <li><a class="title" href="index.html#home">Início</a></li>
+              <li><a class="title" href="index.html#about">Sobre</a></li>
+              <li><a class="title" href="index.html#pacotes">Pacotes</a></li>
+              <li><a class="title" href="index.html#contact">Contato</a></li>
+              
+            </ul>
+          </div>
+          <!-- /menu -->
+          <div class="toggle icon-menu"></div>
+          <div class="toggle icon-cross"></div>
+        </nav>
+      </header>
+
+      <main>
+      <!-- Trips -->
+      <section class="section" id="trips">
+        <div class="container grid">
+          <div class="image">
+            <img src="assets/images/santospraia.jpeg" alt="Praia de Ubatuba">
+          </div>
+          <div class="text">
+            <h2 class="title">Santos</h2>
+            <p>
+              Para além das praias, Santos conta com diversos pontos turísticos de diferentes seguimentos, voltados a história, cultura e arte da cidade. A proposta da ZumbiDev Viagens é proporcionar uma imersão desses diferentes seguimentos em apenas um dia, com paisagens deslumbrantes das praias, visita ao Museu do Café, passeio de trem até o Monte Serrat e seu centro histórico, passagem pelo Jardim Botânico e claro, uma visita ao Museu Pelé, grande ícone do Santos Futebol Clube, do país e do mundo. Tudo isso sem deixar de incluir ótimos restaurantes e quiosques, onde nossos clientes poderão desfrutar da gastronomia típica da cidade.
+
+            </p>
+            <br />
+            
+          </div>
+        </div>
+      </section>
+
+    
+
+      <!--Botoes de busca-->
+  <div class="origem container">
+    <div class="citie">
+      <label for="Origem" class="origem"> Saíde de: </label>
+      <select name="cidadecep" class="form-citie container" id="cidadecep" data-val="5270">
+        <option value="4706">Portuguesa - Tietê</option>
+        <option value="4707">Palmeiras - Barra Funda</option>
+      </select>
+  </div>
+  <div class="people">
+    <label for="acompanhantes" class="acompanhantes"> Pessoas: </label>
+    <input class="people2" type="text" id="num1" onkeyup="calcular();" /> 
+  </select>
+  </div>
+</div>
+<!-- --------------------Total escolhido---------------------------->
+ <div class="total container">
+ <span id="resultado"></span>
+ <form target="pagseguro" method="post" action="https://pagseguro.uol.com.br/checkout/checkout.jhtml">
+  <input type="hidden" name="email_cobranca" value="suporte@lojamodelo.com.br" />
+  <input type="hidden" name="tipo" value="CBR" />
+  <input type="hidden" name="moeda" value="BRL" />
+  <input type="hidden" name="item_id" value="12345" />
+  <input type="hidden" name="item_descr" value="Pacote para Ubatuba" />
+  <input type="hidden" name="item_quant" value="1" />
+  <input type="hidden" name="item_valor" value="200,00" />
+  <input type="hidden" name="frete" value="0" />
+  <input type="hidden" name="peso" value="0" />
+  <input class="pagamento" type="image" name="submit" src="https://p.simg.uol.com.br/out/pagseguro/i/botoes/pagamentos/99x61-comprar-assina.gif" alt="Pague com PagSeguro - é rápido, grátis e seguro!" />
+ </form>
+ </div>
+
+<!------------------------Regulamento ------------------------->
+<h2 class="text container"><strong>Regulamento</strong></h2>
+<div class="rules container">
+
+      <br />
+        <div class="cards">
+          <h2>Sobre o pacote</h2>
+          <br />
+          <p>
+            <strong>O que é incluído nesse pacote:</strong>
+            <br />
+            <br />
+            Deslocamento da cidade de São Paulo à Santos;
+Transporte interno (Santos) em veículo totalmente equipado;
+Guia de turismo profissional e licenciado;
+Motorista particular para grupos maiores de 4 pessoas.
+Todos os impostos, pedágios, taxas de manuseio, taxas de estacionamento durante paradas e receptivo em aeroportos.
+
+            <br />
+            <br />
+            <strong>O que não é incluí­do no nosso pacote:</strong>
+            <br />
+            <br />
+            Almoço e bebidas.
+            <br />
+            Gorjetas (opcional)
+            <br />
+            <br />
+            <strong>Detalhes da partida:</strong>
+            <br />
+            <br />
+            O embarque acontece às 07h00 na estação rodoviária do Tietê (São Paulo, Capital) com estimativa de chegada às 08h30 em Santos. Do checkin e checkout em Santos, estimamos uma duração de 9 horas dentro deste pacote.
+
+
+          </p>
+          <br />
+        </div>
+        <div class="divider-3"></div>
+        <div class="cards">
+          <h2 class="cards2" >Formas de pagamento</h2>
+          <br/>
+          <br />
+          <p>
+            Trabalhamos com cartões de crédito (em até 10x sem juros), débito,
+            TED e PIX, facilitando o seu pagamento.
+          </p>
+</div>
+</div>
+<div class="divider-1"></div>
+</main>
+
+<!-- Footer -->
+<footer class="section">
+  <div class="container grid">
+    <div class="brand">
+      <img
+        class="logo-footer"
+        src="assets/images/Zumbidev-removebg-preview.png"
+        alt="logo zumbidevViagens dois coqueiros e um circulo. "
+      />  
+
+      <div class="copy">  
+        <p class="autor">©2021 ZumbiDev.Viagens</p>
+        <p class="direito">Todos os direitos reservados.</p>
+      </div>
+      <div class="social grid">
+        <a href="https://instagram.com" target="_blank">
+          <img src="./assets/images/instagram.svg" />
+        </a>
+        <a href="https://facebook.com" target="_blank">
+          <img src="./assets/images/facebook.svg" />
+        </a>
+        <a href="https://www.whatsapp.com/" target="_blank"
+          ><img src="./assets/images/whatsapp.svg" />
+        </a>
+        <a href="https://youtube.com" target="_blank"
+          ><img src="./assets/images/youtube.svg" />
+        </a>
+      </div>
+      <!-- <a class="logo logo-alt" href="#home"
+        >ZumbiDev Viagens</a
+      >  Verificar se vai existir-->
+
+      
+    </div>
+  </div>
+</footer>
+
+
+<script src="main.js"></script>
+</body>
+</html>
