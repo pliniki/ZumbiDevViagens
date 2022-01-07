@@ -59,7 +59,7 @@ Jadson Moreira [Linkedin](https://www.linkedin.com/in/jadson-moreira/) <br>
 Davi Bressiani [Linkedin](https://www.linkedin.com/in/davi-bressiani-14a5761a8/) <br>
 
 - Página Ubatuba <br>
-James <br>
+James [Linkedin](https://www.linkedin.com/in/james-gs-666883226/) <br>
 Leonardo Tomaz [Linkedin](https://www.linkedin.com/in/leonardo-tomaz-b985a0177/) <br>
 
 - Página Santos <br>
