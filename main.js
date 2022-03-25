@@ -31,25 +31,7 @@ function changeHeaderWhenScroll() {
   }
 }
 
-/* Testimonials carousel slider swiper */
-const swiper = new Swiper('.swiper', {
-  // Optional parameters
-  direction: 'horizontal',
-  loop: true,
 
-  // If we need pagination
-  pagination: {
-    el: '.swiper-pagination',
-  },
-
-  // Navigation arrows
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
-
-  
-});
 
 /* preço dos pacotes */ 
 
@@ -69,7 +51,7 @@ const scrollReveal = ScrollReveal({
 
 scrollReveal.reveal(
   `#home .image, #home .text,
-  .swiper, .swiper-wrapper,
+ 
   #about .image, #about .text,
   #services header, #services .card,
   #pacotes .pacotes-card, #pacotes .pacotes-card .card,

@@ -244,50 +244,7 @@ nav.show div.icon-cross {
 }
 
 /*====  home ============================ */
-  #home {
-    background: white;
-  }
-
-  #home .container {
-    margin-left: 0;
-    margin-right: 0;
-  }
-
-  #home img {
-    width: 70rem;
-    height: 30rem;
-
-    object-fit: cover;
-    margin-right: 6.5rem;
-    position: relative;
-    right: -5rem;
-  }
-
-  #home .container {
-    margin-left: auto;
-    margin-right: auto;
-  }
-  /*swiper*/
-  .swiper {
-    width: 90.125rem;
-    height: 35rem;
-    display: flex;
-    flex-direction: row;
-  }
-  .swiper-slide {
-    background: #fff;
-    display: flex;
-    justify-content: center;
-    -webkit-box-align: center;
-    align-items: center;
-  }
-
-  .swiper-slide img {
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
+ 
 /*====  ABOUT ============================ */
 
 .titlesobre{
@@ -585,13 +542,7 @@ footer p.direito {
     margin-right: auto;
   }
 
-  .section header,
-  #home header {
-    max-width: 32rem;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-  }
+  
 
   .button {
     height: 3.125rem;
@@ -630,50 +581,7 @@ footer p.direito {
   }
 
   /* home */
-  #home {
-    background: white;
-    
-  }
-
-  #home .container {
-    margin-left: 0;
-    margin-right: 0;
-  }
-
-  #home img {
-    width: 68.75rem;
-    height: 25rem;
-    left: 6rem;
-    object-fit: cover;
-    margin-right: 6.5rem;
-  }
-
-  #home .container {
-    margin-left: auto;
-    margin-right: auto;
-  }
-  /* swiper */
-
-  .swiper {
-    width: 90.125rem;
-    height: 35rem;
-    display: flex;
-    flex-direction: row;
-  }
-  .swiper-slide {
-    background: #fff;
-    display: flex;
-    justify-content: center;
-    -webkit-box-align: center;
-    align-items: center;
-  }
-
-  .swiper-slide img {
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
+  
  
   /* about */
   #about .container {
@@ -695,10 +603,7 @@ footer p.direito {
   }
 
   /* home */
-  #home .container {
-    margin-left: auto;
-    margin-right: auto;
-  }
+  
 
   /* contact */
   #contact .container {
