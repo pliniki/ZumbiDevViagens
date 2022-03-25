@@ -14,7 +14,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 Bibliotecas
 
 - [Google Fonts](https://fonts.google.com/)
-- [SwipeJS](https://github.com/nolimits4web/Swiper)
+- [Bootstrap](https://getbootstrap.com/docs/4.6/components/carousel/)
 - [ScrollRevel](https://scrollrevealjs.org)
 
 Utilitários
